@@ -1,0 +1,48 @@
+{
+    "name": "gsmanager-cloud/sail",
+    "description": "Docker files for running a basic GSManager application.",
+    "keywords": ["gsmanager", "docker"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/gsmanager-cloud/sail/issues",
+        "source": "https://github.com/gsmanager-cloud/sail"
+    },
+    "authors": [
+        {
+            "name": "Sergey Tyuhtin",
+            "email": "info@gsmanager.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "gsmanager-cloud/console": "v1",
+        "gsmanager-cloud/contracts": "v1",
+        "gsmanager-cloud/support": "v1",
+        "symfony/console": "^6.0|^7.0",
+        "symfony/yaml": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "bin": [
+        "bin/sail"
+    ],
+    "autoload": {
+        "psr-4": {
+            "GSManager\\Sail\\": "src/"
+        }
+    },
+    "extra": {
+        "gsmanager": {
+            "providers": [
+                "GSManager\\Sail\\SailServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
