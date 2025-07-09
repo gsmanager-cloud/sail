@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "gsmanager-cloud/console": "v1",
         "gsmanager-cloud/contracts": "v1",
         "gsmanager-cloud/support": "v1",
